@@ -106,6 +106,8 @@ export default {
 
         inputId: String,
 
+        forceBlurOnSelectSearch: false,
+
         existingTags: {
             type: Array,
             default: () => {
@@ -454,7 +456,11 @@ export default {
         tagFromSearchOnClick(tag) {
             this.tagFromSearch(tag);
 
-            this.$refs['taginput'].blur();
+            if (this.forceBlurOnSelectSearch) {
+                this.$refs['taginput'].blur();
+            } else {
+                this.clearSearchResults();
+            } 
         },
 
         /**
