@@ -1,5 +1,5 @@
 {
-    "name": "@voerro/vue-tagsinput",
+    "name": "@kfl/vue-tagsinput-skylabx",
     "version": "2.7.2",
     "description": "A simple tags input with typeahead made with Vue.js 2",
     "main": "src/main.js",
@@ -12,7 +12,7 @@
         "typeahead",
         "autocomplete"
     ],
-    "author": "Alexander Zavyalov <alex@voerro.com> (http://voerro.com)",
+    "author": "Kfl <kfl@skylab-x.io>",
     "license": "MIT",
     "scripts": {
         "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
@@ -24,6 +24,9 @@
         "last 2 versions",
         "not ie <= 8"
     ],
+    "publishConfig": {
+      "access": "public"
+    },
     "devDependencies": {
         "babel-core": "^6.26.3",
         "babel-loader": "^7.1.5",
@@ -39,5 +42,5 @@
         "webpack-cli": "^3.3.12",
         "webpack-dev-server": "^3.11.2"
     },
-    "repository": "https://github.com/voerro/vue-tagsinput"
+    "repository": "https://github.com/kevinflou/vue-tagsinput"
 }
